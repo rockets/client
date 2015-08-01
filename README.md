@@ -16,12 +16,32 @@ npm install rockets
 ## Usage
 
 ```js
-var RocketsClient = require('rockets');
+var Rockets = require('rockets');
 
-var client = new RocketsClient();
+var client = new Rockets();
 
-// Register events
+// Register events on the client.
+client.on('connect', function() {
 
+  // Subscribe to the 'comments' channel.
+  client.subscribe('comments', {
+
+    // Only receive comments in r/programming.
+    subreddit: 'programming'
+
+    // Only receive comments that contain the pattern 'rockets'.
+    contains: [
+      'rockets',
+    ]
+  });
+
+});
+
+client.on('comment', function(comment) {
+  // Do something using the comment data.
+});
+
+// Initiate the client's socket connection.
 client.connect();
 ```
 
