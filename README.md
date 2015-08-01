@@ -2,7 +2,7 @@
 
 ---
 
-This is a client for [Rockets](https://github.com/rtheunissen/rockets).
+This is a client for [rockets](https://github.com/rtheunissen/rockets).
 
 ## Demo
 
