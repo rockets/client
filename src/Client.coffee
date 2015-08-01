@@ -32,7 +32,7 @@ module.exports = class Client extends Events
       when 't3' then @emit 'post', model
 
 
-  # Called whe the socket connection is established.
+  # Called when the socket connection is established.
   onconnect: () ->
     @emit 'connect'
 
@@ -54,7 +54,7 @@ module.exports = class Client extends Events
       setTimeout @reconnect.bind(@), 1000
 
 
-  # Determines whether the socket connection is currently available
+  # Determines whether the socket connection is currently available.
   available: () ->
     return @socket?.readyState == Socket.OPEN
 
