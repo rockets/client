@@ -1,0 +1,32 @@
+{
+  "name": "rockets",
+  "version": "1.0.1",
+  "description": "Server-side client for rtheunissen/rockets",
+  "license": "MIT",
+  "keywords": [
+    "rockets",
+    "reddit"
+  ],
+  "author": {
+    "name": "Rudi Theunissen",
+    "email": "rudolf.theunissen@gmail.com",
+    "url": "https://github.com/rtheunissen"
+  },
+  "main": "lib/Client.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtheunissen/rockets-client"
+  },
+  "bugs": {
+    "url": "https://github.com/rtheunissen/rockets-client/issues"
+  },
+  "dependencies": {
+    "ws": "^0.7.2"
+  },
+  "dev-dependencies": {
+    "coffee-script": "^1.9.3"
+  },
+  "scripts": {
+    "prepublish": "coffee -o lib/ -c src/"
+  }
+}
