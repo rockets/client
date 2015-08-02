@@ -23,13 +23,24 @@ module.exports = class Client extends Events
     @socket.on 'message', @onmessage.bind(@)
 
 
-  # Called when the socket connection receives a message.
-  onmessage: (message) ->
-    @emit 'model', model = JSON.parse(message)
+  # Parses an incoming message, checking if it's an error or a model.
+  parseMessage: (message) ->
+    data = JSON.parse(message)
+    if 'error' of data then @onerror data else @onmodel data
+
+
+  # Called when an incoming message was a model.
+  onmodel: (model) ->
+    @emit 'model', model
 
     switch model.kind
       when 't1' then @emit 'comment', model
       when 't3' then @emit 'post', model
+
+
+  # Called when the socket connection receives a message.
+  onmessage: (message) ->
+    @parseMessage(message)
 
 
   # Called when the socket connection is established.
@@ -42,7 +53,7 @@ module.exports = class Client extends Events
     @emit 'disconnect'
 
 
-  # Called when the socket connection encounters an error.
+  # Called when the client encounters an error.
   onerror: (error) ->
     @emit 'error', error
 
