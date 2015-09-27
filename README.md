@@ -27,12 +27,12 @@ client.on('connect', function() {
   client.subscribe('comments', {
 
     // Only receive comments in r/programming.
-    subreddit: 'programming'
+    subreddit: 'programming',
 
     // Only receive comments that contain the pattern 'rockets'.
     contains: [
       'rockets',
-    ]
+    ],
   });
 
 });
