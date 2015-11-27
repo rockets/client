@@ -23,8 +23,7 @@ var client = new Rockets();
 // Register events on the client.
 client.on('connect', function() {
 
-  // Subscribe to the 'comments' channel.
-  client.subscribe('comments', {
+  var include = {
 
     // Only receive comments in r/programming.
     subreddit: 'programming'
@@ -33,7 +32,18 @@ client.on('connect', function() {
     contains: [
       'rockets',
     ]
-  });
+  };
+
+  var exclude = {
+
+    // Skip comments that contain the word "hack".
+    contains: [
+      'hack',
+    ]
+  };
+
+  // Subscribe to the 'comments' channel.
+  client.subscribe('comments', include, exclude);
 
 });
 
@@ -64,6 +74,6 @@ Events can be registered with `client.on('event', handler)`.
 
 | Name       | Arguments          | Description                                     |
 |------------|--------------------|-------------------------------------------------|
-| subscribe  | channel, [filters] | Subscribes to a channel, with optional filters  |
+| subscribe  | channel, [include [, exclude]] | Subscribes to a channel, with optional include and exclude rules  |
 | available  |                    | Returns `true` if the socket connection is open |
 | close      |                    | Close the connection to the server              |

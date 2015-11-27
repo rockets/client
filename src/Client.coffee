@@ -76,8 +76,8 @@ module.exports = class Client extends Events
 
 
   # Subscribes to a channel with a given set of filters.
-  subscribe: (channel, filters = {}) ->
-    @socket.send JSON.stringify {channel, filters}
+  subscribe: (channel, include, exclude) ->
+    @socket.send JSON.stringify {channel, include, exclude}
 
 
   # Closes the socket connection.
