@@ -1,11 +1,12 @@
-![Rockets](header.gif) [![Author](http://img.shields.io/badge/author-@rudi_theunissen-336699.svg?style=flat-square)](https://twitter.com/rudi_theunissen) [![Version](https://img.shields.io/npm/v/rockets.svg?style=flat-square)]() [![Stability](https://img.shields.io/badge/stability-stable-66BB6A.svg?style=flat-square)]()
+![Rockets](header.gif) [![Author](http://img.shields.io/badge/author-@rudi_theunissen-336699.svg?style=flat-square)](https://twitter.com/rudi_theunissen) [![Version](https://img.shields.io/npm/v/rockets.svg?style=flat-square)]() [![Dependencies](https://img.shields.io/david/rockets/client.svg?style=flat-square)]()
+
 ---
 
-This is a client for [rockets](https://github.com/rtheunissen/rockets).
+This is a client for [rockets/rockets](https://github.com/rockets/rockets).
 
 ## Demo
 
-See [rockets-demo](https://github.com/rtheunissen/rockets-demo).
+See [rockets/demo](https://github.com/rockets/demo).
 
 ## Installation
 

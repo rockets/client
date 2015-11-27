@@ -1,6 +1,6 @@
 {
   "name": "rockets",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Server-side client for rtheunissen/rockets",
   "license": "MIT",
   "keywords": [
@@ -21,7 +21,7 @@
     "url": "https://github.com/rockets/issues"
   },
   "dependencies": {
-    "ws": "^0.7.2"
+    "ws": "^0.8"
   },
   "devDependencies": {
     "coffee-script": "^1.9.3"
