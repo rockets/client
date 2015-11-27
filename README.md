@@ -26,7 +26,7 @@ client.on('connect', function() {
   var include = {
 
     // Only receive comments in r/programming.
-    subreddit: 'programming'
+    subreddit: 'programming',
 
     // Only receive comments that contain the pattern 'rockets'.
     contains: [
@@ -44,7 +44,6 @@ client.on('connect', function() {
 
   // Subscribe to the 'comments' channel.
   client.subscribe('comments', include, exclude);
-
 });
 
 client.on('comment', function(comment) {
