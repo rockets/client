@@ -15,10 +15,10 @@
   "main": "lib/Client.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rtheunissen/rockets-client"
+    "url": "https://github.com/rockets/client"
   },
   "bugs": {
-    "url": "https://github.com/rtheunissen/rockets-client/issues"
+    "url": "https://github.com/rockets/issues"
   },
   "dependencies": {
     "ws": "^0.7.2"
