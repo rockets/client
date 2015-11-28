@@ -1,4 +1,4 @@
-![Rockets](header.gif) [![Author](http://img.shields.io/badge/author-@rudi_theunissen-336699.svg?style=flat-square)](https://twitter.com/rudi_theunissen) [![Version](https://img.shields.io/npm/v/rockets.svg?style=flat-square)](https://www.npmjs.com/package/rockets) [![Dependencies](https://img.shields.io/david/rockets/client.svg?style=flat-square)](https://david-dm.org/rockets/client)
+![Rockets](header.gif) [![Author](http://img.shields.io/badge/author-@rudi_theunissen-00aced.svg?style=flat-square)](https://twitter.com/rudi_theunissen) [![Version](https://img.shields.io/npm/v/rockets.svg?style=flat-square)](https://www.npmjs.com/package/rockets) [![Dependencies](https://img.shields.io/david/rockets/client.svg?style=flat-square)](https://david-dm.org/rockets/client)
 
 ---
 
