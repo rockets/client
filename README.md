@@ -77,3 +77,8 @@ Events can be registered with `client.on('event', handler)`.
 | subscribe  | channel, [include [, exclude]] | Subscribes to a channel, with optional include and exclude rules  |
 | available  |                    | Returns `true` if the socket connection is open |
 | close      |                    | Close the connection to the server              |
+
+
+## Credits
+
+Illustrations by Ken Samonte.
